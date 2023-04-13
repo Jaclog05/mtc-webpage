@@ -1,4 +1,57 @@
 .main {
-    background-color: gray;
-    height: 80vh;
+    background-color: #e0e0e0;
+    height: fit-content;
+}
+
+.coverWrapper{
+    width: 100%;
+    height: 700px;
+    background-image: url('../../images/test-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverWrapper > h1, .coverWrapper > h2 {
+    background-color: black;
+    color: white;
+}
+
+.coverWrapper > h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding: 5px 15px;
+}
+
+.coverWrapper > h2 {
+    font-size: 30px;
+    padding: 5px 15px;
+}
+
+.intro, .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 0px 10%;
+}
+
+.intro > h2, .location > h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.intro > p {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.location > div {
+    background-color: blue;
+    color: black;
 }
