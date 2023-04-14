@@ -23,7 +23,13 @@ const Home = () => {
             </div>
             <div className={styles.location}>
                 <h2>Where are we located?</h2>
-                <h4>Barranquilla - Colombia</h4>
+                <div className={styles.imageDiv}>
+                    <div>
+                        <h3>Carrera 25 # 61-08</h3>
+                        <h3>Los Andes, </h3>
+                        <h4>Barranquilla - Colombia</h4>
+                    </div>
+                </div>
             </div>
         </main>
     )

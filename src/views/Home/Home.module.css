@@ -36,13 +36,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 500px;
     padding: 0px 10%;
 }
 
 .intro > h2, .location > h2 {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .intro > p {
@@ -54,4 +55,25 @@
 .location > div {
     background-color: blue;
     color: black;
+}
+
+.imageDiv {
+    background-image: url('../../images/location-map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imageDiv > div {
+    background-color: black;
+    color: white;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
