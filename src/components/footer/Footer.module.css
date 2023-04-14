@@ -28,19 +28,39 @@
     margin-bottom: 3%;
 }
 
-.socialMedia > h6 {
-    text-align: left;
+.socialMedia > a {
+    text-decoration: none;
+    color: inherit;
+    width: 38%;
     margin-left: 30%;
+    border-radius: 5px;
+}
+
+.socialMedia > a:hover{
+    color: white;
+    background-color: rgb(48, 44, 44);
+}
+
+.socialMedia > a > h6 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+.socialMedia > a > h6 > i{
+    margin: 1% 6%
 }
 
 .upper > div > img {
     height: 100px;
     border-radius: 50%;
+    border: 5px solid #e0e0e0;
 }
 
 .bottom {
-    background-color: #e0e0e0;
-    color: black;
+    background-color: rgb(38, 35, 35);
+    color: white;
     padding: 10px;
 }
 
@@ -61,10 +81,12 @@ i{
 
 .form > input {
     text-align: center;
+    margin: 1%;
 }
 
 button {
     background-color: green;
     color: white;
-    width: 52%;
+    width: 51%;
+    border: none;
 }
