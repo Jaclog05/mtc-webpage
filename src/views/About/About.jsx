@@ -3,7 +3,7 @@ import styles from './About.module.css';
 import Pastors from "../../components/pastors/Pastors";
 import Vision from "../../components/vision/Vision";
 import Belief from "../../components/belief/Belief";
-import Values from "../../components/values/Values";
+import Values from "../../components/values/Values"
 
 const About = () => {
 
@@ -20,10 +20,10 @@ const About = () => {
             </div>
             <div className={styles.aboutInfoWrapper}>
                <div>
-                    <h5 onClick={handleClick} id="pastors">Our Pastors</h5>
-                    <h5 onClick={handleClick} id="vision">Our Vision</h5>
-                    <h5 onClick={handleClick} id="belief">Our Belief</h5>
-                    <h5 onClick={handleClick} id="values">Values</h5>
+                    <h5 className={section === 'pastors' ? styles.tabSelected : styles.unSelected} onClick={handleClick} id="pastors">Our Pastors</h5>
+                    <h5 className={section === 'vision' ? styles.tabSelected : styles.unSelected} onClick={handleClick} id="vision">Our Vision</h5>
+                    <h5 className={section === 'belief' ? styles.tabSelected : styles.unSelected} onClick={handleClick} id="belief">Our Belief</h5>
+                    <h5 className={section === 'values' ? styles.tabSelected : styles.unSelected} onClick={handleClick} id="values">Values</h5>
                 </div>
                 {
                     (() => {
