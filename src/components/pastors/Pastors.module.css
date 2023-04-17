@@ -1,0 +1,17 @@
+.intro{
+    display: grid;
+    gap: 3%;
+    grid-template-columns: 1fr 1fr;
+    padding: 3% 10%;
+    height: fit-content;
+}
+
+.intro > img {
+    width: 100%;
+}
+
+.intro > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
