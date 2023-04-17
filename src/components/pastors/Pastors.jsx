@@ -1,23 +1,57 @@
 import React from "react";
 import styles from './Pastors.module.css'
-import picture from '../../images/mtc-home-picture.png'
+import picture_One from '../../images/Pastor_Rommie.png'
+import picture_Two from '../../images/Pastor_Leonardo.png'
+import picture_Three from '../../images/Pastora_Luz.png'
+
 
 const Pastors = () => {
     return (
-        <div className={styles.intro}> 
-            <img src={picture} alt="mtc-home" />
-            <div>
-                    <h2>
-                        MTC is a church that believes in Jesus, 
-                        a church that loves God and people.
-                    </h2>
-                    <p>
-                        Overwhelmed by the gift of salvation we have found
-                        in Jesus, we have a heart for authentic worship,
-                        are passionate about the local church,
-                        and are on mission to see God’s kingdom established
-                        across the earth.
-                    </p>
+        <div className={styles.pastorsWrapper}> 
+            <div className={styles.intro}>
+                <img src={picture_One} alt="mtc-home" />
+                <div>
+                        <h2>
+                            Rommie Lee Smith Sr.
+                        </h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Modi dolorem sint earum voluptatum harum et, 
+                            porro numquam recusandae laboriosam tenetur
+                            cumque ex doloremque ullam voluptatibus maxime
+                            culpa tempora sequi deleniti
+                        </p>
+                </div>
+            </div>
+            <div className={styles.intro}>
+                <div>
+                        <h2>
+                            Leonardo Fontalvo
+                        </h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Modi dolorem sint earum voluptatum harum et, 
+                            porro numquam recusandae laboriosam tenetur
+                            cumque ex doloremque ullam voluptatibus maxime
+                            culpa tempora sequi deleniti
+                        </p>
+                </div>
+                <img src={picture_Two} alt="mtc-home" />
+            </div>
+            <div className={styles.intro}>
+                <img src={picture_Three} alt="mtc-home" />
+                <div>
+                        <h2>
+                            Luz Alcira Ariza
+                        </h2>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Modi dolorem sint earum voluptatum harum et, 
+                            porro numquam recusandae laboriosam tenetur
+                            cumque ex doloremque ullam voluptatibus maxime
+                            culpa tempora sequi deleniti
+                        </p>
+                </div>
             </div>
         </div>
     )
