@@ -1,0 +1,9 @@
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: fit-content;
+    padding: 2%;
+    margin-bottom: 10px;
+    text-align: justify;
+}

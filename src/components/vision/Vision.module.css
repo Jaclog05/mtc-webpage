@@ -1,0 +1,26 @@
+.intro {
+    display: flex;
+    padding: 3% 3%;
+    height: fit-content;
+    text-align: center;
+}
+
+.intro:first-child {
+    grid-template-columns: 2fr 3fr;
+}
+
+.intro > img {
+    width: 250px;
+    margin: 0px auto;
+}
+
+.intro > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 3%;
+}
+
+.intro > div > h2 {
+    text-align: center;
+}
