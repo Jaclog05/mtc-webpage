@@ -1,0 +1,13 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 2%;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.intro > p {
+    margin-bottom: 2%;
+}
