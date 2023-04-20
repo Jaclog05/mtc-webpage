@@ -1,9 +1,12 @@
 .navBar{
+    position: fixed;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     background-color: black;
     color: white;
     padding: 15px;
+    width: 99vw;
 }
 
 .navBar .left{
