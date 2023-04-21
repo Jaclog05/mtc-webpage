@@ -1,7 +1,8 @@
 import React from "react";
 import styles from'./Band.module.css'
-import picture from '../../images/mtc-home-picture.png'
+import deezerLogo from '../../images/deezer-logo.png'
 import videoBg from '../../images/fyo-band-bg.mp4'
+import albumImage from '../../images/last-album.png'
 
 const Band = () => {
     return(
@@ -12,30 +13,40 @@ const Band = () => {
                 <h2>Music</h2>
             </div>
             <div className={styles.intro}>
-                <img src={picture} alt="mtc-home" />
+            <div className={styles.socialMedia}>
+                    <h5>LISTEN TO OUR MUSIC ON</h5>
+                    <div>
+                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCtnTZrsvxDVN-yj8tNDKFeg">
+                            <i className="bi bi-youtube"></i>
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/2Ap2ov7Yggc0tKp3k6fkSt">
+                            <i className="bi bi-spotify"></i>
+                        </a>
+                        <a target= "blank" rel="noreferrer" href="https://music.apple.com/co/artist/for-youth-only/1533556211">
+                            <i className="bi bi-apple"></i>
+                        </a>
+                        <a target= "blank" rel="noreferrer" href="https://www.deezer.com/es/artist/108444942">
+                            <img src={deezerLogo} alt="deezer-logo"/>
+                        </a>
+                    </div>
+                </div>
                 <div>
                     <h2>
-                        MTC is a church that believes in Jesus, 
-                        a church that loves God and people.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </h2>
                     <p>
-                        Overwhelmed by the gift of salvation we have found
-                        in Jesus, we have a heart for authentic worship,
-                        are passionate about the local church,
-                        and are on mission to see God’s kingdom established
-                        across the earth.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sit, laudantium, ea asperiores, similique illum saepe est commodi quod numquam minus. Fugit, optio labore earum dolor a itaque dolore architecto!
                     </p>
                 </div>
             </div>
             <div className={styles.location}>
-                <h2>Where are we located?  <i className="bi bi-geo-alt-fill"></i></h2>
-                <div className={styles.imageDiv}>
-                    <div>
-                        <h3>Carrera 25 # 61-08</h3>
-                        <h4>Los Andes, </h4>
-                        <h4>Barranquilla - Colombia</h4>
-                        <i className="bi bi-globe-americas"></i>
-                    </div>
+                <img src={albumImage} alt="last-single" />
+                <div>
+                    <h1>VIVES EN MI</h1>
+                    <h2>Available Now!</h2>
+                    <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=VY2gLhxYSh4">
+                            <h5>Listen on Youtube</h5>
+                    </a>
                 </div>
             </div>
         </main>

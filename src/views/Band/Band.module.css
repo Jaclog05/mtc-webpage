@@ -11,8 +11,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
     top: -15%;
+    background-color: #e0e0e0;
 }
 
 video {
@@ -39,20 +39,20 @@ video {
 .coverWrapper > h2 {
     font-size: 30px;
     padding: 5px 15px;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .location {
     position: absolute;
-    top: 1000px;
+    top: 1100px;
     z-index: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: stretch;
     height: 60vh;
     width: 100vw;
-    padding: 1% 10%;
+    padding: 3% 0%;
+    background-color: black;
 }
 
 .intro{
@@ -60,16 +60,50 @@ video {
     z-index: 2;
     display: grid;
     gap: 3%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     padding: 3% 10%;
-    top: 600px
+    top: 700px;
 }
 
-.intro > img {
-    width: 100%;
+.intro > div:first-child {
+    border: 2px solid black;
+    height: 100%;
+    border-radius: 5px;
 }
 
-.intro > div {
+.intro > div:first-child > div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+}
+
+.intro > div:first-child > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.intro > div:first-child > div > a > i {
+    font-size: 3rem
+}
+
+.intro > div:first-child > div > a > i:hover {
+    font-size: 3.2rem
+}
+
+.intro > div:first-child > div > a > img{
+    margin: 12% auto;
+    height: 2.9rem;
+}
+
+
+.intro > div:first-child > h5 {
+    text-align: center;
+}
+
+.intro > div:last-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,14 +121,40 @@ video {
     font-size: 20px;
 }
 
-.location > h2 > i {
+.location > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.location > div > h1 {
+    text-align: center;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.location > div > h2 {
+    text-align: center;
     font-size: 25px;
+    color: white;
+}
+
+.location > div > a {
+    text-decoration: none;
+    background-color: #e0e0e0;
+    color: black;
+    padding: 2% 2%;
+    border-radius: 5px;
+}
+
+.location > div > a:hover {
+    background-color: brown;
+    color: white;
+    transform: scale(1.02);
 }
 
 .imageDiv {
-    background-image: url('../../images/location-map.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 400px;
     width: 100%;
     border: 3px solid black;
