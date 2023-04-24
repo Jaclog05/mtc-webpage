@@ -1,4 +1,6 @@
 .main {
     background-color: gray;
     height: 80vh;
+    display: grid;
+    place-content: center;
 }
