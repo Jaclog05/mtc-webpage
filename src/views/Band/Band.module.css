@@ -4,8 +4,8 @@
 }
 
 .coverWrapper{
-    position: absolute;
-    width: 100%;
+    /* position: absolute;
+    width: 100%; */
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -43,8 +43,8 @@ video {
 }
 
 .location {
-    position: absolute;
-    top: 1100px;
+    /* position: absolute;
+    top: 1100px; */
     z-index: 2;
     display: flex;
     justify-content: space-evenly;
@@ -56,8 +56,8 @@ video {
 }
 
 .intro{
-    position: absolute;
-    z-index: 2;
+    /* position: absolute;
+    z-index: 2; */
     display: grid;
     gap: 3%;
     grid-template-columns: 1fr 2fr;
