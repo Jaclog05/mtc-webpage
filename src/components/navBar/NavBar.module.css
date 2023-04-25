@@ -3,15 +3,19 @@
     z-index: 3;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
     background-color: black;
     color: white;
-    padding: 15px;
-    width: 99vw;
+    padding: 0px 15px;
+    width: 100vw;
+    height: 12vh
 }
 
 .navBar .left{
+  width: 500px;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 2px 5px;
 }
@@ -25,7 +29,6 @@
 .navBar .right{
   display: grid;
   grid-auto-flow: column;
-  gap: 20px;
   align-items: center;
 }
 
@@ -36,6 +39,22 @@
   text-decoration: none;
   color: white;
   height: 100%;
+  padding: 0px 15px;
+}
+
+.selected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(48, 44, 44);
+  text-decoration: none;
+  height: 100%;
+  padding: 0px 15px;
+}
+
+.selected:hover {
+  color: white
 }
 
 .links:hover{
